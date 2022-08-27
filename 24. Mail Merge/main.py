@@ -4,5 +4,5 @@ with open("../mail merge/Input/Names/invited_names.txt", "r") as names_file:
 		for name in names_file:
 			renamed = name.strip()
 			mail = body.replace("[name]", renamed)
-			with open(f"../mail merge/Output/ReadyToSend/letter_for_{renamed}.docx", "w") as mail_file:
+			with open(f"../mail merge/Output/ReadyToSend/letter_for_{renamed}.docx, 'w'") as mail_file:
 				mail_file.write(mail)
