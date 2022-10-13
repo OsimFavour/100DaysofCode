@@ -22,6 +22,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException
 from time import sleep
+import os
 
 options = Options()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -31,8 +32,8 @@ driver_path = "C:\Development\chromedriver.exe"
 driver = webdriver.Chrome(executable_path=driver_path, options=options)
 
 URL = 'https://tinder.com/'
-EMAIL = "osimfavour000@gmail.com"
-PASSWORD = "Mmumene02"
+EMAIL = os.environ.get("MY_EMAIL2")
+PASSWORD = os.environ.get("THE_PASSWORD2")
 TINDER_CODE = "199877"
 
 driver.get(URL)
