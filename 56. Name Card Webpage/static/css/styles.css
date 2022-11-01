@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    color: #66BFBF;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    /*font-size: 562.5%;*/ 
+    /* i.e ((90px / 16) * 100%) -> converting pixel to em or root em (rem)*/
+    /* 1em is 16px 
+    therefore (90px / 16) -> converting 90 pixel to em or root em (rem)*/
+
+    margin: 50px auto 0 auto;
+    margin-bottom: 0px;
+}
+
+h2 { 
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+#programmer {
+    font-weight: normal;
+}
+
+h3 {
+    color:  #11999E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #11999E;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #EAF6F6;
+    border-width: 5px;
+    width: 5%;
+}
+
+p{
+    color: #40514E;
+}
+
+.pro {
+    text-decoration: underline
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.middle-container {
+    margin-top: 100px 0;
+}
+
+.bottom-container {
+   background-color: #66BFBF;
+   padding: 50px 0 20px;
+}
+
+.skill-row {
+    width: 50%;  /*Did you know that 100% of width makes the value centered in the screen*/
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.code-img {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.dance-img {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
